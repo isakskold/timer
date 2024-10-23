@@ -1,6 +1,6 @@
 import React from "react";
 import { AnimatedImg, CustomWrapper } from "./alarmVy.styles";
-import { SetNewTimerBtnStyled, AlertStyled } from "./alarmVy.styles";
+import { SetNewTimerBtnStyled, AlertStyled, H1Styled } from "./alarmVy.styles";
 import { useNavigate } from "react-router-dom";
 import alarmIcon from "../../assets/alarmIcon.png";
 
@@ -14,7 +14,7 @@ const AlarmVy = () => {
     <CustomWrapper>
       <AlertStyled>
         <AnimatedImg src={alarmIcon} alt="Bell" />
-        <h1>Times up!</h1>
+        <H1Styled>Times up!</H1Styled>
       </AlertStyled>
       <SetNewTimerBtnStyled onClick={handleClick}>
         Set New Timer

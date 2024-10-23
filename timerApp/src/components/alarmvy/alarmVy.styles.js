@@ -41,6 +41,30 @@ export const AnimatedImg = styled(motion.img).attrs({
   width: 85px;
 `;
 
+export const H1Styled = styled.h1`
+  margin-top: 2rem;
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  animation: shake 1s ease-in-out infinite;
+`;
+
 export const SetNewTimerBtnStyled = styled.button`
   background-color: inherit;
   color: white;
